@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid yellow; */
+}
+body,.Pframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  height: 100vh;
+  background-color: rgb(255, 0, 255);
+}
+.Pframe {
+  position: relative;
+  background-color: whitesmoke;
+  width: 500px;
+  height: 500px;
+  border: 2px solid yellow;
+  overflow: hidden;
+
+}
+img {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  pointer-events: none;
+}
+.btn {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  z-index: 99;
+}
+.btn > svg {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
